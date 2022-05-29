@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息登记系统</title>
+</head>
+<body>
+
+    <center><h1>用户信息登录</h1></center>
+    <hr>
+    <center>
+    <form action="https://baidu.com" enctype="mutipart/form-data">
+        
+        姓名<input type="text" name="username" Autocomplete Autofocus  required/>
+        <br>
+        性别
+        <input type="radio" name="gender" value="1" checked/>男
+        <input type="radio" name="gender" value="0"/>女
+        <br>
+        密码<input type="password" name=psd Placeholder="六位密码" maxlength="6" Autocomplete  required/>
+        <br>
+        确认密码<input type="password"  required/>
+        <br>
+        兴趣爱好
+        <input type="checkbox" name="love" value="reading"/>阅读
+        <input type="checkbox" name="love" value="sports"/>运动
+        <input type="checkbox" name="love" value="games"/>打游戏
+        <br>
+        学历
+        <select  required>
+            <option value="cz">初中</option>
+            <option value="gz">高中</option>
+            <option value="bk">本科</option>
+            <option value="ss">硕士</option>
+        </select>
+        <br>
+        已经被录入的学院
+        <input type="text" value="清华大学" readonly>
+        <br>
+        简介
+        <textarea row="60" cols="60" name="profile"  required/>
+        </textarea>
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <br>
+        <input type="fire" name="fire">简历提交
+
+
+    </form> 
+    </center>
+</body>
+</html>

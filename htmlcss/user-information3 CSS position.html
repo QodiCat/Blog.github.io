@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息登记系统</title>
+    <style>
+        .centerform{
+            padding: 50px;
+            position: relative;
+            left: 500px;
+            float: left;
+           
+        }
+        .item{ 
+            width: 350px;
+            height: 50px ;
+            position: relative;
+            display: inline-block;
+            
+        }
+        .list{
+           
+            position:absolute;
+            left: 200px;
+            display: inline-block;
+        }
+     
+        h1{
+            position: relative;
+            color:bisque;
+           left:600px;
+
+        }
+        form{
+            align:center;
+            font-family:"宋体";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+   <h1>用户信息登录</h1>
+    <hr>
+    <div class="centerform">
+    <form action="https://baidu.com" enctype="mutipart/form-data">
+        
+        <div class="item">姓名</div><input  class="list" type="text" name="username" Autocomplete Autofocus  required/>
+        <br>
+        <div class="item">性别</div>
+        <div class="list">
+        <input type="radio" name="gender" value="1" checked/>男
+        <input type="radio" name="gender" value="0"/>女</div>
+        <br>
+        <div class="item">密码</div>
+        <input  class="list" type="password" name=psd Placeholder="六位密码" maxlength="6" Autocomplete  required/>
+        <br>
+        <div class="item">确认密码</div><input  class="list" type="password"  required/>
+        <br>
+        <div class="item">兴趣爱好</div>
+        <div class="list">
+        <input type="checkbox" name="love" value="reading"/>阅读
+        <input type="checkbox" name="love" value="sports"/>运动
+        <input type="checkbox" name="love" value="games"/>打游戏</div>
+        <br>
+        <div class="item">学历</div>
+        <select  class="list" required>
+            <option value="cz">初中</option>
+            <option value="gz">高中</option>
+            <option value="bk">本科</option>
+            <option value="ss">硕士</option>
+        </select>
+        <br>
+        <div class="item">已经被录入的学院</div>
+        <input  class="list" type="text" value="清华大学" readonly>
+        <br><br>
+        <div class="item">简介</div>
+        <textarea  class="list" row="60" cols="60" name="profile"  required/>
+        </textarea>
+        <br><br>
+        <div class="item">简历提交</div><input  class="list" type="fire" name="fire">
+        <br>
+        <div class="list">
+        <input   type="submit" value="提交">
+        <input   type="reset" value="重置"></div>
+    </form> 
+        </div>
+        <script>
+            var items=document.getElementsByClassName("item")
+            console.log(items)
+        </script>
+</body>
+</html>
